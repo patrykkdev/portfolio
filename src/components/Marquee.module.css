@@ -1,0 +1,38 @@
+.band {
+  overflow: hidden;
+  border-top: 1px solid var(--line, rgba(17, 17, 17, 0.12));
+  border-bottom: 1px solid var(--line, rgba(17, 17, 17, 0.12));
+  padding: clamp(16px, 2vw, 26px) 0;
+}
+
+@keyframes pkMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: pkMarquee 24s linear infinite;
+  will-change: transform;
+}
+
+.group {
+  font-size: clamp(22px, 3.4vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.item {
+  padding: 0 clamp(14px, 2vw, 26px);
+}
+
+.diamond {
+  color: var(--accent, #111111);
+}

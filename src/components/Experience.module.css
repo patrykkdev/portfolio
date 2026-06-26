@@ -1,0 +1,138 @@
+.section {
+  padding: clamp(80px, 12vw, 180px) clamp(24px, 6vw, 120px);
+  border-top: 1px solid var(--line, rgba(17, 17, 17, 0.12));
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 84px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+}
+
+.tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted, #8c8c8c);
+}
+
+.timeline {
+  margin-top: clamp(32px, 5vw, 64px);
+  border-top: 1px solid var(--line, rgba(17, 17, 17, 0.12));
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: clamp(16px, 4vw, 48px);
+  padding: clamp(28px, 4vw, 44px) 0;
+  border-bottom: 1px solid var(--line, rgba(17, 17, 17, 0.12));
+}
+
+.period {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: var(--muted, #8c8c8c);
+  letter-spacing: 0.04em;
+}
+
+.role {
+  margin: 0 0 6px;
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.org {
+  margin: 0 0 14px;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: var(--accent, #111111);
+}
+
+.desc {
+  margin: 0;
+  max-width: 560px;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.6;
+  color: var(--fg, #111111);
+}
+
+/* Skill groups */
+.group {
+  margin-top: clamp(32px, 4vw, 56px);
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: clamp(16px, 4vw, 48px);
+}
+
+.groupFirst {
+  margin-top: clamp(48px, 7vw, 96px);
+}
+
+.groupLabel {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--fg, #111111);
+  letter-spacing: 0.08em;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  font-size: clamp(18px, 2.4vw, 32px);
+  font-weight: 600;
+  padding: 8px 18px;
+  border: 1px solid var(--line, rgba(17, 17, 17, 0.12));
+  border-radius: 100px;
+}
+
+.certs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert {
+  font-size: clamp(17px, 1.5vw, 22px);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert .diamond {
+  color: var(--accent, #111111);
+}
+
+.langs {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: var(--fg, #111111);
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .item,
+  .group {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
