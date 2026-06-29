@@ -61,7 +61,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     period: "2024 — TERAZ",
     title: "Software Developer",
-    org: "Exon Computer Systems · Bydgoszcz",
+    org: "Exon Computer Systems · Toruń",
     desc: "Tworzenie aplikacji webowych dla systemów digital signage oraz gier w Unity. Budowa systemów galeryjnych z własnym CMS, przygotowanie środowiska z grami na Ubuntu Server (watchdogi, kiosk-mode, dystrybucja konfiguracji przez Puppet). Wdrożenie domeny Active Directory, konfiguracja sieci i monitoring infrastruktury w Zabbixie.",
   },
   {
