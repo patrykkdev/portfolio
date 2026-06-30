@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://patryk-kulpa.com/sitemap.xml
